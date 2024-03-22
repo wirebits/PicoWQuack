@@ -51,9 +51,9 @@ The testing is going on different systems.
 # Install and Run
 1. Download or Clone the Repository.<br>
 2. Open the folder.<br>
-3. There are three files in it : ```code.py``` and ```index.html```.<br>
+3. There are two files in it : ```code.py``` and ```index.html```.<br>
 -Make sure that your Raspberry Pi Pico W is connected to your PC/Laptop.<br>
-4. Copy all three files in the ```CIRCUITPY```.<br>
+4. Copy both files in the ```CIRCUITPY```.<br>
 -It ask for replacement of ```code.py``` file, then replace it. It will overwrite in the ```code.py``` file.<br>
 -After 2-3 minutes, an access point is created named ```PicoWQuack``` whose password is ```picowquack```.<br>
 6. Connect to that access point.<br>
