@@ -51,7 +51,7 @@ The testing is going on different systems.
 # Install and Run
 1. Download or Clone the Repository.<br>
 2. Open the folder.<br>
-3. There are three files in it : ```code.py```, ```hid.py``` and ```index.html```.<br>
+3. There are three files in it : ```code.py``` and ```index.html```.<br>
 -Make sure that your Raspberry Pi Pico W is connected to your PC/Laptop.<br>
 4. Copy all three files in the ```CIRCUITPY```.<br>
 -It ask for replacement of ```code.py``` file, then replace it. It will overwrite in the ```code.py``` file.<br>
