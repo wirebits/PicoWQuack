@@ -34,12 +34,12 @@ Means circuit python is successfully flashed in the Raspberry Pi Pico W.
  <tr>
   <th>WAIT</th>
   <th>It add time in the code.<br>Time is in milliseconds.<br>1000 ms = 1 second.</th>
-  <th>INTVL 1000</th>
+  <th>WAIT 1000</th>
  </tr>
  <tr>
   <th>TYPE</th>
   <th>It add text want to type in the code.</th>
-  <th>WRITE Hello World!</th>
+  <th>TYPE Hello World!</th>
  </tr>
 </table>
 
