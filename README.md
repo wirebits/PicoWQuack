@@ -4,24 +4,33 @@ Setup for Raspberry Pi Pico W to make a Wifi Duck.
 # This project is only working for Raspberry Pi Pico W!
 
 # Credits
-The mnemoics used in this tool is heavily inspired by <a href="https://github.com/hak5">Hak5</a> Ducky Script.<br>
-The main inspiration of this project is from <a href="https://github.com/SpacehuhnTech">Spacehuhn</a>.<br>
-The implementation of the wifi duck into Raspberry Pi Pico W inspired me by <a href="https://github.com/dbisu">dbisu</a>.
+- The mnemoics used in this tool is heavily inspired by [Hak5](https://github.com/hak5) Ducky Script.
+- The main inspiration of this project is from [Spacehuhn](https://github.com/SpacehuhnTech).
+- The implementation of the wifi duck into Raspberry Pi Pico W inspired me by [dbisu](https://github.com/dbisu).
+
+# Key Features
+- Minimal Setup.
+- Simple and clean webpage for type scripts.
+- When code executed, then it show an text *Executed!*.
+
+# OS Support
+- Windows 10
+- Android
 
 # Installation and Setup of Circuit Python
-1. Download Circuit Python ```.uf2``` file for Raspberry Pi Pico W from <a href="https://downloads.circuitpython.org/bin/raspberry_pi_pico_w/en_US/adafruit-circuitpython-raspberry_pi_pico_w-en_US-8.2.10.uf2">here</a>.<br>
-2. Connect Raspberry Pi Pico with a USB cable.<br>
-3. Press and hold the bootsel button and connect to the PC/Laptop.<br>
--When it connects, then Raspberry Pi Pico W show as a removable storage device named ```RPI-RP2```.<br>
--When ```RPI-RP2``` is showing, then release the bootsel button.<br>
-4. Copy the ```uf2``` file in the ```RPI-RP2```.<br>
--When it is copied, then it disconnects automatically and reconnect as ```CIRCUITPY```.<br>
-Means circuit python is successfully flashed in the Raspberry Pi Pico W.
-5. Open ```CIRCUITPY```.<br>
--There are two important things in it : ```lib``` folder and ```code.py``` file<br>
-6. Download Adafruit CircuitPython Bundle from <a href="https://github.com/adafruit/Adafruit_CircuitPython_Bundle/releases/download/20240301/adafruit-circuitpython-bundle-8.x-mpy-20240301.zip">here</a>.<br>
-7. Extarct the ZIP file.<br>
-8. Copy ```adafruit_hid``` and ```adafruit_httpserver``` folders in the ```lib``` folder of ```CIRCUITPY```.<br>
+1. Download Circuit Python `.uf2` file for Raspberry Pi Pico W from [here](https://downloads.circuitpython.org/bin/raspberry_pi_pico_w/en_US/adafruit-circuitpython-raspberry_pi_pico_w-en_US-8.2.10.uf2).
+2. Connect Raspberry Pi Pico with a USB cable.
+3. Press and hold the `BOOTSEL` button and connect to the PC/Laptop.
+- When it connects, then Raspberry Pi Pico W show as a removable storage device named `RPI-RP2`.
+- When `RPI-RP2` is showing, then release the `BOOTSEL` button.
+4. Copy the `uf2` file in the `RPI-RP2`.
+- When it is copied, then it disconnects automatically and reconnect as `CIRCUITPY`.
+- Means circuit python is successfully flashed in the Raspberry Pi Pico W.
+5. Open `CIRCUITPY`.
+- There are two important things in it : `lib` folder and `code.py` file.
+6. Download Adafruit CircuitPython Bundle from [here](https://github.com/adafruit/Adafruit_CircuitPython_Bundle/releases/download/20240301/adafruit-circuitpython-bundle-8.x-mpy-20240301.zip).
+7. Extarct the ZIP file.
+8. Copy `adafruit_hid` and `adafruit_httpserver` folders in the `lib` folder of `CIRCUITPY`.
 9. Done! Now, Raspberry Pi Pico W is ready to use as a Wifi Duck.
 
 # Mnemonic Table
@@ -43,32 +52,55 @@ Means circuit python is successfully flashed in the Raspberry Pi Pico W.
  </tr>
 </table>
 
-# OS Support
-- Windows 10
-- Android
-
 # Install and Run
-1. Download or Clone the Repository.<br>
-2. Open the folder.<br>
-3. There are two files in it : ```code.py``` and ```index.html```.<br>
--Make sure that your Raspberry Pi Pico W is connected to your PC/Laptop.<br>
-4. Copy both files in the ```CIRCUITPY```.<br>
--It ask for replacement of ```code.py``` file, then replace it. It will overwrite in the ```code.py``` file.<br>
--After 2-3 minutes, an access point is created named ```PicoWQuack``` whose password is ```picowquack```.<br>
-6. Connect to that access point.<br>
-7. When connected successfully, open your browser and type the following IP - ```192.168.4.1```.<br>
-8. Hit enter.<br>
--A webpage open like this : <br>
+1. Download or Clone the Repository.
+2. Open the folder.
+3. There are two files in it : `code.py` and `index.html`.
+- Make sure that your Raspberry Pi Pico W is connected to your PC/Laptop.
+4. Copy both files in the `CIRCUITPY`.
+- It ask for replacement of `code.py` file, then replace it.
+- It will overwrite in the `code.py` file.
+- After 2-3 minutes, an Access Point is created named `PicoWQuack` whose password is `picowquack`.
+6. Connect to that access point.
+7. When connected successfully, open your browser and type the following IP - `192.168.4.1`.
+8. Hit enter.
+- A webpage open like this :
 
-![photo_2024-03-04_02-46-57](https://github.com/wirebits/PicoWQuack/assets/159493381/5748b157-58ed-4ecf-af2a-4d60cd53bbde)
+![PicoWQuack Web Page](https://github.com/wirebits/PicoWQuack/assets/159493381/5748b157-58ed-4ecf-af2a-4d60cd53bbde)
 
-9. Type your script and click on Run button.<br>
--The script executes!<br>
--To code Raspberry Pi Pico W, use Thonny IDE.<br>
+9. Type your script and click on Run button.
+- The script executes!
 
 # Note
 Add a new line at the end of the script.
 
-<h1>Key Features</h1>
-<b>1. Simple and clean webpage for type scripts.</b><br>
-<b>2. When code executed, then it show an text <i>Executed!</i>.<br>
+# Before Coding...
+Start your code with `WAIT` so that board get time to initiate.
+
+# Examples
+## Open notepad and type Hello World!
+
+```
+WAIT 1000
+GUI R
+WAIT 1000
+TYPE notepad
+WAIT 1000
+ENTER
+WAIT 1000
+TYPE Hello World!
+
+```
+## Open CMD as Administrator Mode
+
+```
+WAIT 1000
+GUI R
+WAIT 1000
+TYPE cmd
+WAIT 1000
+CTRL SHIFT ENTER
+WAIT 1300
+ALT Y
+
+```
