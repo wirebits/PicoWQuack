@@ -8,7 +8,7 @@ The mnemoics used in this tool is heavily inspired by <a href="https://github.co
 The main inspiration of this project is from <a href="https://github.com/SpacehuhnTech">Spacehuhn</a>.<br>
 The implementation of the wifi duck into Raspberry Pi Pico W inspired me by <a href="https://github.com/dbisu">dbisu</a>.
 
-# Setup and Installation of Circuit Python
+# Installation and Setup of Circuit Python
 1. Download Circuit Python ```.uf2``` file for Raspberry Pi Pico W from <a href="https://downloads.circuitpython.org/bin/raspberry_pi_pico_w/en_US/adafruit-circuitpython-raspberry_pi_pico_w-en_US-8.2.10.uf2">here</a>.<br>
 2. Connect Raspberry Pi Pico with a USB cable.<br>
 3. Press and hold the bootsel button and connect to the PC/Laptop.<br>
@@ -43,10 +43,9 @@ Means circuit python is successfully flashed in the Raspberry Pi Pico W.
  </tr>
 </table>
 
-# Tested Systems
-The tool is currently tested on : <br>
-1. Windows (10)<br>
-The testing is going on different systems.
+# OS Support
+- Windows 10
+- Android
 
 # Install and Run
 1. Download or Clone the Repository.<br>
@@ -66,6 +65,9 @@ The testing is going on different systems.
 9. Type your script and click on Run button.<br>
 -The script executes!<br>
 -To code Raspberry Pi Pico W, use Thonny IDE.<br>
+
+# Note
+Add a new line at the end of the script.
 
 <h1>Key Features</h1>
 <b>1. Simple and clean webpage for type scripts.</b><br>
