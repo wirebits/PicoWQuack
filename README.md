@@ -72,7 +72,7 @@ Setup for Raspberry Pi Pico W to make a Wifi Duck.
 - The script executes!
 
 # Note
-Add a new line at the end of the script.
+Add a space by press `SPACE` key at the end of the script.
 
 # Before Coding...
 Start your code with `WAIT` so that board get time to initiate.
