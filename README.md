@@ -88,8 +88,7 @@ TYPE notepad
 WAIT 1000
 ENTER
 WAIT 1000
-TYPE Hello World!
-
+TYPE Hello World! 
 ```
 ## Open CMD as Administrator Mode
 
@@ -101,6 +100,5 @@ TYPE cmd
 WAIT 1000
 CTRL SHIFT ENTER
 WAIT 1300
-ALT Y
-
+ALT Y 
 ```
