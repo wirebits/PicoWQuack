@@ -97,7 +97,7 @@ Setup for Raspberry Pi Pico W to make a Wifi Duck.
 # Before Coding...
 Start your code with `WAIT` so that board get time to initiate.
 
-# Reset Raspberry Pi Pico W
+# Clean Raspberry Pi Pico W
 1. Connect Raspberry Pi Pico W with a USB cable.
 2. Press and hold the `BOOTSEL` button and connect to the PC/Laptop.
 - When it connects, then Raspberry Pi Pico W show as a removable storage device named `RPI-RP2`.
