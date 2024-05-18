@@ -11,7 +11,6 @@ Setup for Raspberry Pi Pico W to make a Wifi Duck.
 # Key Features
 - Minimal Setup.
 - Simple and clean webpage for type scripts.
-- When code executed, then it show an text *Executed!*.
 
 # OS Support
 - Windows 10
@@ -53,6 +52,29 @@ Setup for Raspberry Pi Pico W to make a Wifi Duck.
  </tr>
 </table>
 
+# Supported Mnemonics
+## Alphabet Keys
+```A``` ```B``` ```C``` ```D``` ```E``` ```F``` ```G``` ```H``` ```I``` ```J```
+```K``` ```L``` ```M``` ```N``` ```O``` ```P``` ```Q``` ```R``` ```S``` ```T```
+```U``` ```V``` ```W``` ```X``` ```Y``` ```Z```
+## Function Keys
+```F1``` ```F2``` ```F3``` ```F4``` ```F5``` ```F6``` ```F7``` ```F8``` ```F9``` ```F10```
+```F11``` ```F12```
+## Navigation Keys
+```LEFT``` ```UP``` ```RIGHT``` ```DOWN``` ```TAB``` ```HOME``` ```END``` ```PGUP``` ```PGDN```
+## Lock Keys
+```CAPS``` ```NUM``` ```SCROLL```
+## System and GUI Keys
+```GUI``` ```ESC``` ```PRTSCR``` ```PAUSE```
+## Editing Keys
+```INSERT``` ```DEL``` ```BKSP``` ```ENTER```
+## Modifier Keys
+```CTRL``` ```SHIFT``` ```ALT```
+## ASCII Characters
+`` ` `` `!` `@` `#` `$` `%` `^` `&` `*` `(` `)` `-` `=` `[` `]` `\` `;` 
+`'` `,` `.` `/` `SPACE` `~` `_` `+` `{` `}` `|` `:` `"` `<` `>` `?` `0`
+`1` `2` `3` `4` `5` `6` `7` `8` `9`
+
 # Install and Run
 1. Download or Clone the Repository.
 2. Open the folder.
@@ -72,9 +94,6 @@ Setup for Raspberry Pi Pico W to make a Wifi Duck.
 9. Type your script and click on Run button.
 - The script executes!
 
-# Note
-Add a space by press `SPACE` key at the end of the script.
-
 # Before Coding...
 Start your code with `WAIT` so that board get time to initiate.
 
@@ -89,7 +108,7 @@ TYPE notepad
 WAIT 1000
 ENTER
 WAIT 1000
-TYPE Hello World! 
+TYPE Hello World!
 ```
 ## Open CMD as Administrator Mode
 
@@ -101,5 +120,5 @@ TYPE cmd
 WAIT 1000
 CTRL SHIFT ENTER
 WAIT 1300
-ALT Y 
+ALT Y
 ```
