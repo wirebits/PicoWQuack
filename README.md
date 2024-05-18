@@ -18,7 +18,7 @@ Setup for Raspberry Pi Pico W to make a Wifi Duck.
 
 # Installation and Setup of Circuit Python
 1. Download latest Circuit Python `.uf2` file for Raspberry Pi Pico W from [here](https://circuitpython.org/board/raspberry_pi_pico_w/).<br>Latest is `9.0.4`.
-2. Connect Raspberry Pi Pico with a USB cable.
+2. Connect Raspberry Pi Pico W with a USB cable.
 3. Press and hold the `BOOTSEL` button and connect to the PC/Laptop.
 - When it connects, then Raspberry Pi Pico W show as a removable storage device named `RPI-RP2`.
 - When `RPI-RP2` is showing, then release the `BOOTSEL` button.
@@ -96,6 +96,14 @@ Setup for Raspberry Pi Pico W to make a Wifi Duck.
 
 # Before Coding...
 Start your code with `WAIT` so that board get time to initiate.
+
+# Reset Raspberry Pi Pico W
+1. Connect Raspberry Pi Pico W with a USB cable.
+2. Press and hold the `BOOTSEL` button and connect to the PC/Laptop.
+- When it connects, then Raspberry Pi Pico W show as a removable storage device named `RPI-RP2`.
+- When `RPI-RP2` is showing, then release the `BOOTSEL` button.
+3. Copy the `flash_nuke.uf2` file in the `RPI-RP2`.
+- When it is copied, then it disconnects automatically and reconnect as `RPI-RP2`.
 
 # Examples
 ## Open notepad and type Hello World!
