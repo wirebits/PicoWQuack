@@ -17,7 +17,7 @@ Setup for Raspberry Pi Pico W to make a Wifi Duck.
 - Android
 
 # Installation and Setup of Circuit Python
-1. Download Circuit Python `.uf2` file for Raspberry Pi Pico W from [here](https://circuitpython.org/board/raspberry_pi_pico_w/).
+1. Download latest Circuit Python `.uf2` file for Raspberry Pi Pico W from [here](https://circuitpython.org/board/raspberry_pi_pico_w/).<br>Latest is `9.0.4`.
 2. Connect Raspberry Pi Pico with a USB cable.
 3. Press and hold the `BOOTSEL` button and connect to the PC/Laptop.
 - When it connects, then Raspberry Pi Pico W show as a removable storage device named `RPI-RP2`.
@@ -28,7 +28,7 @@ Setup for Raspberry Pi Pico W to make a Wifi Duck.
 5. Open `CIRCUITPY`.
 - There are two important things in it : `lib` folder and `code.py` file.
 6. Download Adafruit CircuitPython Bundle from [here](https://github.com/adafruit/Adafruit_CircuitPython_Bundle/releases).
-7. Download the ZIP file according to latest circuit python `uf2` file version.
+7. Download the latest ZIP file according to latest circuit python `uf2` file version.<br>Latest is `adafruit-circuitpython-bundle-9.x-mpy-20240518.zip`.
 8. Extract the ZIP file.
 9. Copy `adafruit_hid` and `adafruit_httpserver` folders in the `lib` folder of `CIRCUITPY`.
 10. Done! Now, Raspberry Pi Pico W is ready to use as a Wifi Duck.
