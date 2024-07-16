@@ -37,23 +37,10 @@ Setup for Raspberry Pi Pico W to make a Wifi Duck.
 10. Done! Now, Raspberry Pi Pico W is ready to use as a Wifi Duck.
 
 # Mnemonic Table
-<table>
- <tr>
-  <th>Mnemonics</th>
-  <th>Description</th>
-  <th>Example</th>
- </tr>
- <tr>
-  <th>WAIT</th>
-  <th>It add time in the code.<br>Time is in milliseconds.<br>1000 ms = 1 second.</th>
-  <th>WAIT 1000</th>
- </tr>
- <tr>
-  <th>TYPE</th>
-  <th>It add text want to type in the code.</th>
-  <th>TYPE Hello World!</th>
- </tr>
-</table>
+| Mnemonics | Description | Example  |
+|-----------|-------------|----------|
+| WAIT      | It add time in the code.<br>Time is in milliseconds.<br>1000 ms = 1 second. | WAIT 1000 |
+| TYPE      | It add text want to type in the code. | TYPE Hello World! |
 
 # Supported Mnemonics
 ## Alphabet Keys
@@ -80,20 +67,20 @@ Setup for Raspberry Pi Pico W to make a Wifi Duck.
 1. Download or Clone the Repository.
 2. Open the folder.
 3. There are two files in it : `code.py` and `index.html`.
-- Make sure that your Raspberry Pi Pico W is connected to your PC/Laptop.
-4. Copy both files in the `CIRCUITPY`.
-- It ask for replacement of `code.py` file, then replace it.
-- It will overwrite in the `code.py` file.
-- After 2-3 minutes, an Access Point is created named `PicoWQuack` whose password is `picowquack`.
+   - Make sure that your Raspberry Pi Pico W is connected to your PC/Laptop.
+5. Copy both files in the `CIRCUITPY`.
+   - It ask for replacement of `code.py` file, then replace it.
+   - It will overwrite in the `code.py` file.
+   - After 2-3 minutes, an Access Point is created named `PicoWQuack` whose password is `picowquack`.
 6. Connect to that access point.
 7. When connected successfully, open your browser and type the following IP - `192.168.4.1`.
 8. Hit enter.
-- A webpage open like this :
+   - A webpage open like this :
 
 ![PicoWQuack Web Page](https://github.com/user-attachments/assets/491b82fc-24ab-4e5d-a453-4edb04d30d23)
 
 9. Type your script and click on Run button.
-- The script executes!
+    - The script executes!
 
 # Before Coding...
 Start your code with `WAIT` so that board get time to initiate.
