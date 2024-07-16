@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PicoWQuack</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: white;
+        }
+        .container {
+            background-color: black;
+            height: auto;
+            width: 400px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .textarea {
+            color: white;
+            resize: none;
+            width: 100%;
+            height: 400px;
+            max-width: 100%;
+            padding: 15px;
+            border-color: #87CEEB;
+            border-radius: 4px;
+            background: #000000;
+            font-family: "Courier New", Courier, monospace;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+            overflow-y: auto;
+        }
+        button {
+            color: white;
+            padding: 14px 20px;
+            margin: 5px 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 25%;
+        }
+        .run {
+            background-color: #008000;
+        }
+        .upload {
+            background-color: yellow;
+            color: black;
+        }
+        .save {
+            background-color: red;
+        }
+        .title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: white;
+            border: 2px solid orange;
+            padding: 10px;
+            border-radius: 5px;
+            letter-spacing: 5px;
+        }
+        button:hover {
+            opacity: 0.8;
+        }
+        input[type="file"] {
+            display: none;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function sendHttpRequest(data) {
+            console.log(data);
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "http://192.168.4.1/execute", true);
+            xhr.setRequestHeader("Content-Type", "application/json");
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === XMLHttpRequest.DONE) {
+                    console[xhr.status === 200 ? 'log' : 'error'](
+                        xhr.status === 200 ? "Request sent successfully!" : "Request failed. Status: " + xhr.status
+                    );
+                }
+            };
+            xhr.send(JSON.stringify(data));
+        }
+
+        function main() {
+            var content = document.getElementById("content").value;
+            sendHttpRequest({ username: "Payload", content: content });
+        }
+
+        function handleFileSelect(event) {
+            var file = event.target.files[0];
+            var reader = new FileReader();
+            reader.onload = function(event) {
+                document.getElementById('content').value = event.target.result;
+            };
+            reader.readAsText(file);
+        }
+
+        function saveFile() {
+            var content = document.getElementById("content").value;
+            var blob = new Blob([content], { type: "text/plain;charset=utf-8" });
+            var link = document.createElement("a");
+            link.href = URL.createObjectURL(blob);
+            link.download = "payload.txt";
+            link.click();
+        }
+
+        function triggerFileInput() {
+            document.getElementById('fileInput').click();
+        }
+    </script>
+    <div class="container">
+        <div class="title">PicoWQuack</div>
+        <textarea id="content" class="textarea" placeholder="Enter text"></textarea>
+        <div class="buttons">
+            <button class="run" onclick="main()">Run</button>
+            <button class="upload" onclick="triggerFileInput()">Upload</button>
+            <input type="file" id="fileInput" onchange="handleFileSelect(event)">
+            <button class="save" onclick="saveFile()">Save</button>
+        </div>
+    </div>
+</body>
+</html>
