@@ -11,6 +11,9 @@ Setup for Raspberry Pi Pico W to make a Wifi Duck.
 # Key Features
 - Minimal Setup.
 - Simple and clean webpage for type scripts.
+- Run Button - Run typed mnemonics.
+- Upload Button - Upload .txt files which contain mnemonics to run.
+- Save Button - Save typed mnemonics on the system.
 
 # OS Support
 - Windows 10
@@ -54,22 +57,20 @@ Setup for Raspberry Pi Pico W to make a Wifi Duck.
 
 # Supported Mnemonics
 ## Alphabet Keys
-```A``` ```B``` ```C``` ```D``` ```E``` ```F``` ```G``` ```H``` ```I``` ```J```
-```K``` ```L``` ```M``` ```N``` ```O``` ```P``` ```Q``` ```R``` ```S``` ```T```
-```U``` ```V``` ```W``` ```X``` ```Y``` ```Z```
+`A` `B` `C` `D` `E` `F` `G` `H` `I` `J` `K` `L` `M` `N` `O`
+`P` `Q` `R` `S` `T` `U` `V` `W` `X` `Y` `Z`
 ## Function Keys
-```F1``` ```F2``` ```F3``` ```F4``` ```F5``` ```F6``` ```F7``` ```F8``` ```F9``` ```F10```
-```F11``` ```F12```
+`F1` `F2` `F3` `F4` `F5` `F6` `F7` `F8` `F9` `F10` `F11` `F12`
 ## Navigation Keys
-```LEFT``` ```UP``` ```RIGHT``` ```DOWN``` ```TAB``` ```HOME``` ```END``` ```PGUP``` ```PGDN```
+`LEFT` `UP` `RIGHT` `DOWN` `TAB` `HOME` `END` `PGUP` `PGDN`
 ## Lock Keys
-```CAPS``` ```NUM``` ```SCROLL```
+`CAPS` `NUM` `SCROLL`
 ## System and GUI Keys
-```GUI``` ```ESC``` ```PRTSCR``` ```PAUSE```
+`GUI` `ESC` `PRTSCR` `PAUSE`
 ## Editing Keys
-```INSERT``` ```DEL``` ```BKSP``` ```ENTER```
+`INSERT` `DEL` `BKSP` `ENTER`
 ## Modifier Keys
-```CTRL``` ```SHIFT``` ```ALT```
+`CTRL` `SHIFT` `ALT`
 ## ASCII Characters
 `` ` `` `!` `@` `#` `$` `%` `^` `&` `*` `(` `)` `-` `=` `[` `]` `\` `;` 
 `'` `,` `.` `/` `SPACE` `~` `_` `+` `{` `}` `|` `:` `"` `<` `>` `?` `0`
@@ -89,7 +90,7 @@ Setup for Raspberry Pi Pico W to make a Wifi Duck.
 8. Hit enter.
 - A webpage open like this :
 
-![PicoWQuack Web Page](https://github.com/wirebits/PicoWQuack/assets/159493381/5748b157-58ed-4ecf-af2a-4d60cd53bbde)
+![PicoWQuack Web Page](https://github.com/user-attachments/assets/491b82fc-24ab-4e5d-a453-4edb04d30d23)
 
 9. Type your script and click on Run button.
 - The script executes!
@@ -129,4 +130,13 @@ WAIT 1000
 CTRL SHIFT ENTER
 WAIT 1300
 ALT Y
+```
+## Create A New Folder
+```
+WAIT 1000
+CTRL SHIFT N
+WAIT 1200
+TYPE hello
+WAIT 1100
+ENTER
 ```
