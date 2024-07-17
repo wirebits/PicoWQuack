@@ -43,7 +43,7 @@ Setup for Raspberry Pi Pico W to make a Wifi Duck.
 |-----------|-------------|----------|
 | WAIT      | It add time in the code.<br>Time is in milliseconds.<br>1000 ms = 1 second. | WAIT 1000 |
 | TYPE      | It add text want to type in the code. | TYPE Hello World! |
-| LOOP      | It runs commands for a certain number of times.<br> Synatx is `LOOP number-of-times commands` | LOOP 3 TYPE Hello World! |
+| LOOP      | It runs commands for a certain number of times.<br> Synatx is `LOOP number-of-times commands` | LOOP 3 TYPE Hello World!<br>LOOP 4 TAB<br>LOOP 1 CTRL S |
 
 # Supported Mnemonics
 ## Alphabet Keys
@@ -82,8 +82,10 @@ Setup for Raspberry Pi Pico W to make a Wifi Duck.
 
 ![PicoWQuack Web Page](https://github.com/user-attachments/assets/491b82fc-24ab-4e5d-a453-4edb04d30d23)
 
-9. Type your script and click on Run button.
+9. Type your script and click on `Run` button.
     - The script executes!
+10. By clicking `Upload` button, we can load `.txt` file and show in text area and then we can run that script by clicking on `Run` button.
+11. By clicking `Upload` button, we can load `.txt` file and show in text area and then we can run that script by clicking on `Run` button.
 
 # Before Coding...
 1. Start your code with `WAIT` so that board get time to initiate.
