@@ -10,7 +10,7 @@ Setup for Raspberry Pi Pico W to make a Wifi Duck.
 
 # Key Features
 - Minimal Setup.
-- Simple and clean webpage for type scripts.
+- Simple and clean webpage for type mnemonics.
 - Run Button - Run typed mnemonics.
 - Upload Button - Upload .txt files which contain mnemonics to run.
 - Save Button - Save typed mnemonics on the system.
@@ -20,19 +20,21 @@ Setup for Raspberry Pi Pico W to make a Wifi Duck.
 - Android
 
 # Installation and Setup of Circuit Python
-1. Download latest Circuit Python `.uf2` file for Raspberry Pi Pico W from [here](https://circuitpython.org/board/raspberry_pi_pico_w/).<br>Latest is `9.0.4`.
+1. Download Latest Circuit Python `.uf2` file for Raspberry P i Pico W - [here](https://circuitpython.org/board/raspberry_pi_pico_w/)
+   - Latest version is **9.1.0**.
 2. Connect Raspberry Pi Pico W with a USB cable.
 3. Press and hold the `BOOTSEL` button and connect to the PC/Laptop.
-- When it connects, then Raspberry Pi Pico W show as a removable storage device named `RPI-RP2`.
-- When `RPI-RP2` is showing, then release the `BOOTSEL` button.
-4. Copy the `uf2` file in the `RPI-RP2`.
-- When it is copied, then it disconnects automatically and reconnect as `CIRCUITPY`.
-- Means circuit python is successfully flashed in the Raspberry Pi Pico W.
+   - When it connects, then Raspberry Pi Pico W show as a removable storage device named `RPI-RP2`.
+   - When `RPI-RP2` is showing, then release the `BOOTSEL` button.
+4. Copy the `.uf2` file in the `RPI-RP2`.
+   - When it is copied, then it disconnects automatically and reconnect as `CIRCUITPY`.
+   - Means circuit python is successfully flashed in the Raspberry Pi Pico W.
 5. Open `CIRCUITPY`.
-- There are two important things in it : `lib` folder and `code.py` file.
-6. Download Adafruit CircuitPython Bundle from [here](https://github.com/adafruit/Adafruit_CircuitPython_Bundle/releases).
-7. Download the latest ZIP file according to latest circuit python `uf2` file version.<br>Latest is `adafruit-circuitpython-bundle-9.x-mpy-20240518.zip`.
-8. Extract the ZIP file.
+   - There are two important things in it : `lib` folder and `code.py` file.
+6. Download Adafruit CircuitPython Bundle from [here](https://github.com/adafruit/Adafruit_CircuitPython_Bundle/releases)
+   - Latest is `adafruit-circuitpython-bundle-9.x-mpy-20240709.zip`.
+7. Extarct the ZIP file.
+8. Go to the `lib` folder in the extracted ZIP file.
 9. Copy `adafruit_hid` and `adafruit_httpserver` folders in the `lib` folder of `CIRCUITPY`.
 10. Done! Now, Raspberry Pi Pico W is ready to use as a Wifi Duck.
 
@@ -41,6 +43,7 @@ Setup for Raspberry Pi Pico W to make a Wifi Duck.
 |-----------|-------------|----------|
 | WAIT      | It add time in the code.<br>Time is in milliseconds.<br>1000 ms = 1 second. | WAIT 1000 |
 | TYPE      | It add text want to type in the code. | TYPE Hello World! |
+| LOOP      | It runs commands for a certain number of times.<br> Synatx is `LOOP number-of-times commands` | LOOP 3 TYPE Hello World! |
 
 # Supported Mnemonics
 ## Alphabet Keys
@@ -83,15 +86,16 @@ Setup for Raspberry Pi Pico W to make a Wifi Duck.
     - The script executes!
 
 # Before Coding...
-Start your code with `WAIT` so that board get time to initiate.
+1. Start your code with `WAIT` so that board get time to initiate.
+2. While using `LOOP` use only one command.
 
 # Clean Raspberry Pi Pico W
 1. Connect Raspberry Pi Pico W with a USB cable.
 2. Press and hold the `BOOTSEL` button and connect to the PC/Laptop.
-- When it connects, then Raspberry Pi Pico W show as a removable storage device named `RPI-RP2`.
-- When `RPI-RP2` is showing, then release the `BOOTSEL` button.
+   - When it connects, then Raspberry Pi Pico W show as a removable storage device named `RPI-RP2`.
+   - When `RPI-RP2` is showing, then release the `BOOTSEL` button.
 3. Copy the `flash_nuke.uf2` file in the `RPI-RP2`.
-- When it is copied, then it disconnects automatically and reconnect as `RPI-RP2`.
+   - When it is copied, then it disconnects automatically and reconnect as `RPI-RP2`.
 
 # Examples
 ## Open notepad and type Hello World!
