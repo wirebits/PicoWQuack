@@ -1,3 +1,7 @@
+# PicoWQuack
+# Setup for Raspberry Pi Pico W to make a Wifi Duck.
+# Author - WireBits
+
 import wifi
 import time
 import usb_hid
