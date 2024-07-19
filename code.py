@@ -18,7 +18,7 @@ wifi.radio.stop_station()
 wifi.radio.start_ap(ssid, password)
 
 pool = socketpool.SocketPool(wifi.radio)
-server = Server(pool, "/", debug=True)  # Root endpoint for simplicity
+server = Server(pool, "/", debug=True)
 
 kbd = Keyboard(usb_hid.devices)
 layout = KeyboardLayoutUS(kbd)
