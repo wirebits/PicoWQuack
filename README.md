@@ -44,6 +44,7 @@ Setup for Raspberry Pi Pico W to make a Wifi Duck.
 | WAIT      | It add time in the code.<br>Time is in milliseconds.<br>1000 ms = 1 second. | WAIT 1000 |
 | TYPE      | It add text want to type in the code. | TYPE Hello World! |
 | LOOP      | It runs commands for a certain number of times.<br> Synatx is `LOOP number-of-times commands` | LOOP 3 TYPE Hello World!<br>LOOP 4 TAB<br>LOOP 1 CTRL S<br>LOOP 1 CTRL SHIFT ENTER |
+| INF       | It run commans infinitely.<br>Syntax is `INF commands` | INF TYPE Hello World!<br>INF TAB |
 
 # Supported Mnemonics
 ## Alphabet Keys
