@@ -20,6 +20,7 @@ It is a USB Rubber Ducky with wifi capabilities and it was termed by [Spacehuhn]
 - Run Button - Run typed mnemonics.
 - Upload Button - Upload .txt files which contain mnemonics to run.
 - Save Button - Save typed mnemonics on the system.
+- Clear Button - Clears the text area.
 
 # OS Support
 - Windows 10
@@ -87,7 +88,7 @@ It is a USB Rubber Ducky with wifi capabilities and it was termed by [Spacehuhn]
 8. Hit enter.
    - A webpage open like this :
 
-![PicoWQuack Web Page](https://github.com/user-attachments/assets/491b82fc-24ab-4e5d-a453-4edb04d30d23)
+![PicoWQuack Web Page](https://github.com/user-attachments/assets/f4d342f4-74f8-426c-8b8c-693419043992)
 
 9. Type your script and click on `Run` button.
     - The script executes!
