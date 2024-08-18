@@ -45,6 +45,14 @@ It is a USB Rubber Ducky with wifi capabilities and it was termed by [Spacehuhn]
 9. Copy `adafruit_hid` and `adafruit_httpserver` folders in the `lib` folder of `CIRCUITPY`.
 10. Done! Now, Raspberry Pi Pico W is ready to use as a Wifi Duck.
 
+# CIRCUITPY Directory Structure
+- **CIRCUITPY/**
+  - **lib/**
+      - `adafruit_hid`
+      - `adafruit_httpserver`
+  - `code.py`
+  - `index.html`
+
 # Mnemonic Table
 | Mnemonics | Description | Example  |
 |-----------|-------------|----------|
