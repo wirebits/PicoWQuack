@@ -1,5 +1,6 @@
 # PicoWQuack
-Setup for Raspberry Pi Pico W to make a Wifi Duck.
+![Static Badge](https://img.shields.io/badge/Tool-PicoWQuack-Green) ![Static Badge](https://img.shields.io/badge/Version-1.0-yellow)<br>
+**Setup for Raspberry Pi Pico W to make a Wifi Duck.**
 
 # This project is only working for Raspberry Pi Pico W!
 
