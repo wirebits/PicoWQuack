@@ -67,6 +67,7 @@ It is a USB Rubber Ducky with wifi capabilities and it was termed by [Spacehuhn]
 - It is used to put the cursor in the next line.
 - It is only used with TYPE.
 - Example : `TYPE Hello World!-`
+- If TYPE contain any command and then `-` then it run automatically without `ENTER` key.
 
 # Supported Mnemonics
 ## Alphabet Keys
