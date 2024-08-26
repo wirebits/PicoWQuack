@@ -96,8 +96,7 @@ def generateHID(hidScript):
                 text_to_type = hidLine.split(" ", 1)[1]
                 if text_to_type.endswith("-"):
                     typeText(text_to_type[:-1].strip())
-                    kbd.press(Keycode.ENTER)
-                    kbd.release_all()
+                    layout.write("\n")
                 else:
                     typeText(text_to_type)
             else:
@@ -110,7 +109,9 @@ progStatus = False
 def hid_execute(hidScript):
     global progStatus
     if not progStatus:
+        progStatus = True
         generateHID(hidScript)
+        progStatus = False
         print("Done")
     else:
         print("Update your payload and start again!")
@@ -128,7 +129,7 @@ def base(request: Request):
 def execute(request: Request):
     if request.method == POST:
         try:
-            payload = request.json()["content"]
+            payload = request.json().get("content", "")
             if isinstance(payload, str):
                 payload = payload.splitlines()
                 hid_execute(payload)
