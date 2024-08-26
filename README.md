@@ -59,8 +59,14 @@ It is a USB Rubber Ducky with wifi capabilities and it was termed by [Spacehuhn]
 |-----------|-------------|----------|
 | WAIT      | It add time in the code.<br>Time is in milliseconds.<br>1000 ms = 1 second. | WAIT 1000 |
 | TYPE      | It add text want to type in the code. | TYPE Hello World! |
-| LOOP      | It runs commands for a certain number of times.<br> Synatx is `LOOP number-of-times commands` | LOOP 3 TYPE Hello World!<br>LOOP 4 TAB<br>LOOP 1 CTRL S<br>LOOP 1 CTRL SHIFT ENTER |
-| INF       | It run commans infinitely.<br>Syntax is `INF commands` | INF TYPE Hello World!<br>INF TAB |
+| LOOP      | It runs commands for a certain number of times.<br> Synatx is `LOOP number-of-times commands` | LOOP 3<br>TYPE Hello World!<br>EXIT<br><br>LOOP 4<br>TAB<br>EXIT<br><br>LOOP 1<br>CTRL S<br>EXIT<br><br>LOOP 1<br>CTRL SHIFT N<br>EXIT<br> |
+| INF       | It run commans infinitely.<br>Syntax is `INF commands` | INF<br>TYPE Hello World!<br>EXIT<br><br>INF<br>TAB<br>EXIT<br> |
+
+# Special Symbols
+1. `-`
+- It is used to put the cursor in the next line.
+- It is only used with TYPE.
+- Example : `TYPE Hello World!-`
 
 # Supported Mnemonics
 ## Alphabet Keys
