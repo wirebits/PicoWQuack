@@ -1,6 +1,5 @@
 # PicoWQuack
-![Static Badge](https://img.shields.io/badge/Tool-PicoWQuack-Green) ![Static Badge](https://img.shields.io/badge/Version-1.0-yellow)<br>
-**Setup for Raspberry Pi Pico W to make a Wifi Duck.**
+Setup for Raspberry Pi Pico W to make a Wifi Duck.
 
 # This project is only working for Raspberry Pi Pico W!
 
@@ -156,4 +155,17 @@ WAIT 1200
 TYPE hello
 WAIT 1100
 ENTER
+```
+## Open notepad and type Hello World! 6 times in different lines
+```
+WAIT 1000
+GUI R
+WAIT 1000
+TYPE notepad
+WAIT 1000
+ENTER
+WAIT 1000
+LOOP 6
+TYPE Hello World!-
+EXIT
 ```
