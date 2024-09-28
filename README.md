@@ -110,9 +110,9 @@ It is a USB Rubber Ducky with wifi capabilities and it was termed by [Spacehuhn]
 10. By clicking `Upload` button, we can load `.txt` file and it show in text area and then we can run that script by clicking on `Run` button.
 11. By clicking `Save` button, we can save mnemonics in text area on the system in `.txt` file.
 
-# Before Coding...
-1. Start your code with `WAIT` so that board get time to initiate.
-2. While using `LOOP` use only one command.
+> [!TIP]
+>  Start your code with `WAIT` so that board get time to initiate.<br>
+>  While using `LOOP` use only one command.
 
 # Clean Raspberry Pi Pico W
 1. Connect Raspberry Pi Pico W with a USB cable.
