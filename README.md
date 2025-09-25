@@ -1,20 +1,7 @@
-# PicoWQuack
-Setup for Raspberry Pi Pico W to make a Wifi Duck.
+# 🦆PicoWQuack
+A wifi-controlled USB Rubber Ducky clone built with Raspberry Pi Pico W Series boards.
 
-# This project is only working for Raspberry Pi Pico W!
-
-# Working of PicoWQuack
-![PicoWQuack Working](https://github.com/user-attachments/assets/80df1d28-bf29-4f62-9eb3-b008decb98ff)
-
-# What is Wifi Duck?
-It is a USB Rubber Ducky with wifi capabilities and it was termed by [Spacehuhn](https://github.com/SpacehuhnTech).
-
-# Credits
-- The mnemoics used in this tool is heavily inspired by [Hak5](https://github.com/hak5) Ducky Script.
-- The main inspiration of this project is from [Spacehuhn](https://github.com/SpacehuhnTech).
-- The implementation of the wifi duck into Raspberry Pi Pico W inspired me by [dbisu](https://github.com/dbisu).
-
-# Key Features
+# ✨Features
 - Minimal Setup.
 - Simple and clean webpage for type mnemonics.
 - Run Button - Run typed mnemonics.
@@ -22,28 +9,27 @@ It is a USB Rubber Ducky with wifi capabilities and it was termed by [Spacehuhn]
 - Save Button - Save typed mnemonics on the system.
 - Clear Button - Clears the text area.
 
-# OS Support
-- Windows 10
-- Android
+# ✅Supported Boards
+- Raspberry Pi Pico W
+- Raspberry Pi Pico 2 W
 
-# Installation and Setup of Circuit Python
-1. Download Latest Circuit Python `.uf2` file for Raspberry P i Pico W - [here](https://circuitpython.org/board/raspberry_pi_pico_w/)
-   - Latest version is **9.1.0**.
-2. Connect Raspberry Pi Pico W with a USB cable.
-3. Press and hold the `BOOTSEL` button and connect to the PC/Laptop.
-   - When it connects, then Raspberry Pi Pico W show as a removable storage device named `RPI-RP2`.
-   - When `RPI-RP2` is showing, then release the `BOOTSEL` button.
-4. Copy the `.uf2` file in the `RPI-RP2`.
+# 📦Requirements
+- `1` Raspberry Pi Pico W or Raspberry Pi Pico 2 W Board
+- `1` Micro-B USB Cable with data transfer support
+
+# ⚙️Setup CircuitPython
+1. Open Official CircuitPython download link from [here](https://circuitpython.org/downloads).
+2. Search `Pico W` or `Pico 2 W` according to the board you have.
+3. Select your board and click on it.
+4. Download latest stable release CircuitPython `.uf2` file and noted its version.
+   - It is like X.Y.Z.
+   - Latest stable release is `9.2.8` but it can be changed in future so keep eye on it.
+5. Copy the `.uf2` file into the respective board.
    - When it is copied, then it disconnects automatically and reconnect as `CIRCUITPY`.
-   - Means circuit python is successfully flashed in the Raspberry Pi Pico W.
-5. Open `CIRCUITPY`.
-   - There are two important things in it : `lib` folder and `code.py` file.
-6. Download Adafruit CircuitPython Bundle from [here](https://github.com/adafruit/Adafruit_CircuitPython_Bundle/releases)
-   - Latest is `adafruit-circuitpython-bundle-9.x-mpy-20240709.zip`.
-7. Extarct the ZIP file.
-8. Go to the `lib` folder in the extracted ZIP file.
-9. Copy `adafruit_hid` and `adafruit_httpserver` folders in the `lib` folder of `CIRCUITPY`.
-10. Done! Now, Raspberry Pi Pico W is ready to use as a Wifi Duck.
+   - Means CircuitPython is successfully flashed in the `Raspberry Pi Pico W` or `Raspberry Pi Pico 2 W` board.
+6. Done! Now, `Raspberry Pi Pico W` or `Raspberry Pi Pico 2 W` Board is flashed with CircuitPython `.uf2` file.
+
+# ⚙️Setup Essential Files for PicoWQuack
 
 # CIRCUITPY Directory Structure
 - **CIRCUITPY/**
