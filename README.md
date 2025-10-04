@@ -18,35 +18,34 @@ A wifi-controlled USB Rubber Ducky clone built with Raspberry Pi Pico W Series b
 - `1` Micro-B USB Cable with data transfer support
 
 # ⚙️Setup CircuitPython
-1. Open Official CircuitPython download link from [here](https://circuitpython.org/downloads).
-2. Search `Pico W` or `Pico 2 W` according to the board you have.
-3. Select your board and click on it.
-4. Download latest stable release CircuitPython `.uf2` file and noted its version.
-   - It is like X.Y.Z.
-   - Latest stable release is `9.2.8` but it can be changed in future so keep eye on it.
-5. Copy the `.uf2` file into the respective board.
+1. Download `.uf2` files according to your boards.
+   - Raspberry Pi Pico W - [here](https://github.com/wirebits/PicoWQuack/releases/download/v1.0/raspberry_pi_pico_w.uf2).
+   - Raspberry Pi Pico 2 W - [here](https://github.com/wirebits/PicoWQuack/releases/download/v1.0/raspberry_pi_pico2_w.uf2).
+2. Copy the `.uf2` file into the respective board.
    - `RPI-RP2` for `Raspberry Pi Pico W` and `RP2350` for `Raspberry Pi Pico 2 W`.
-   - When it is copied, then it disconnects automatically and reconnect as `CIRCUITPY`.
+   - When it is copied, then it disconnects automatically and reconnect as `PICOWQUACK`.
    - Means CircuitPython is successfully flashed in the `Raspberry Pi Pico W` or `Raspberry Pi Pico 2 W` board.
-7. Done! Now, `Raspberry Pi Pico W` or `Raspberry Pi Pico 2 W` Board is flashed with CircuitPython `.uf2` file.
+7. Done! Now, `Raspberry Pi Pico W` or `Raspberry Pi Pico 2 W` Board is flashed with `.uf2` file.
 
 # 🔧Setup Essential Files for PicoWQuack
 1. Download or Clone the Repository.
 2. Open the folder.
    - Make sure that your `Raspberry Pi Pico W` or `Raspberry Pi Pico 2 W` board is connected to your PC/Laptop.
-3. Copy `code.py` in the `CIRCUITPY`.
+3. Copy `code.py` in the `PICOWQUACK`.
    - It ask for replacement of `code.py` file, then replace it.
    - It will overwrite in the `code.py` file.
-4. Copy `index.html` in the `CIRCUITPY`.
-5. Download latest Adafruit CircuitPython Bundle from [here](https://circuitpython.org/libraries).
+4. Copy `index.html` in the `PICOWQUACK`.
+   - It ask for replacement of `index.html` file, then replace it.
+   - It will overwrite in the `index.html` file.
+6. Download latest Adafruit CircuitPython Bundle from [here](https://circuitpython.org/libraries).
    - There are 2 variants of libraries : `Bundles` and `The Community Bundle`.
    - In `Bundles` variant, download latest stable Adafruit CircuitPython Bundle as noted version of `.uf2` file.
    - Latest stable release is `adafruit-circuitpython-bundle-9.x-mpy-20250829.zip` but it can be changed in future so keep eye on it.
-6. Extarct the ZIP file.
-7. Go to the `lib` folder in the extracted ZIP file.
-8. Copy `adafruit_hid` and `adafruit_httpserver` folders in the `lib` folder of `CIRCUITPY`.
+7. Extarct the ZIP file.
+8. Go to the `lib` folder in the extracted ZIP file.
+9. Copy `adafruit_hid` and `adafruit_httpserver` folders in the `lib` folder of `PICOWQUACK`.
    - After 2-3 minutes, an access point is created named `PicoWQuack` whose password is `picowquack`.
-9. Done! Now, `Raspberry Pi Pico W` or `Raspberry Pi Pico 2 W` board is ready to use as `PicoWQuack`.
+10. Done! Now, `Raspberry Pi Pico W` or `Raspberry Pi Pico 2 W` board is ready to use as `PicoWQuack`.
 
 # 🏃🏻‍♂Run PicoWQuack
 1. Connect to that access point.
