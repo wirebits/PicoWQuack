@@ -19,8 +19,8 @@ A wifi-controlled USB Rubber Ducky clone built with Raspberry Pi Pico W Series b
 
 # ⚙️Setup CircuitPython
 1. Download `.uf2` files according to your boards.
-   - Raspberry Pi Pico W - [here](https://github.com/wirebits/PicoWQuack/releases/download/v1.0/raspberry_pi_pico_w.uf2).
-   - Raspberry Pi Pico 2 W - [here](https://github.com/wirebits/PicoWQuack/releases/download/v1.0/raspberry_pi_pico2_w.uf2).
+   - Raspberry Pi Pico W from [here](https://github.com/wirebits/PicoWQuack/releases/download/v1.0/raspberry_pi_pico_w.uf2).
+   - Raspberry Pi Pico 2 W from [here](https://github.com/wirebits/PicoWQuack/releases/download/v1.0/raspberry_pi_pico2_w.uf2).
 2. Copy the `.uf2` file into the respective board.
    - `RPI-RP2` for `Raspberry Pi Pico W` and `RP2350` for `Raspberry Pi Pico 2 W`.
    - When it is copied, then it disconnects automatically and reconnect as `PICOWQUACK`.
@@ -37,15 +37,8 @@ A wifi-controlled USB Rubber Ducky clone built with Raspberry Pi Pico W Series b
 4. Copy `index.html` in the `PICOWQUACK`.
    - It ask for replacement of `index.html` file, then replace it.
    - It will overwrite in the `index.html` file.
-6. Download latest Adafruit CircuitPython Bundle from [here](https://circuitpython.org/libraries).
-   - There are 2 variants of libraries : `Bundles` and `The Community Bundle`.
-   - In `Bundles` variant, download latest stable Adafruit CircuitPython Bundle as noted version of `.uf2` file.
-   - Latest stable release is `adafruit-circuitpython-bundle-9.x-mpy-20250829.zip` but it can be changed in future so keep eye on it.
-7. Extarct the ZIP file.
-8. Go to the `lib` folder in the extracted ZIP file.
-9. Copy `adafruit_hid` and `adafruit_httpserver` folders in the `lib` folder of `PICOWQUACK`.
    - After 2-3 minutes, an access point is created named `PicoWQuack` whose password is `picowquack`.
-10. Done! Now, `Raspberry Pi Pico W` or `Raspberry Pi Pico 2 W` board is ready to use as `PicoWQuack`.
+5. Done! Now, `Raspberry Pi Pico W` or `Raspberry Pi Pico 2 W` board is ready to use as `PicoWQuack`.
 
 # 🏃🏻‍♂Run PicoWQuack
 1. Connect to that access point.
