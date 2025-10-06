@@ -34,11 +34,28 @@ A wifi-controlled USB Rubber Ducky clone built with Raspberry Pi Pico W Series b
 3. Copy `code.py` in the `PICOWQUACK`.
    - It ask for replacement of `code.py` file, then replace it.
    - It will overwrite in the `code.py` file.
-4. Copy `index.html` in the `PICOWQUACK`.
+4. Copy `boot.py` in the `PICOWQUACK`.
+5. Copy `index.html` in the `PICOWQUACK`.
    - It ask for replacement of `index.html` file, then replace it.
    - It will overwrite in the `index.html` file.
    - After 2-3 minutes, an access point is created named `PicoWQuack` whose password is `picowquack`.
-5. Done! Now, `Raspberry Pi Pico W` or `Raspberry Pi Pico 2 W` board is ready to use as `PicoWQuack`.
+6. Done! Now, `Raspberry Pi Pico W` or `Raspberry Pi Pico 2 W` board is ready to use as `PicoWQuack`.
+
+# 🛠️ Tweeks in `network.conf` and `boot.py`files
+## `network.conf`
+- There are three values : `ssid`, `password` and `ip`.
+- Put the values in double quotes.
+- Change as per required.
+- Default values :
+  1. ssid : `PicoWQuack`
+  2. password : `picowquack`
+  3. ip : `192.168.4.1`
+## `boot.py`
+- `boot.py` helps to hide / unhide mass storage device to work in stealth.
+- In `boot.py`, replace `X` with any pin number available on the board in `LOC 7`.
+- By default, the mass storage is hidden when `boot.py` is in `PICOWQUACK`.
+- To show mass storage, put jumper wire between that pin number mentioned in `boot.py` and `GND` and press and release the `RST` or `RESET` button.
+- To hide mass storage, just remove jumper wire between them and press and release the `RST` or `RESET` button.
 
 # 🏃🏻‍♂Run PicoWQuack
 1. Connect to that access point.
@@ -54,8 +71,9 @@ A wifi-controlled USB Rubber Ducky clone built with Raspberry Pi Pico W Series b
 7. By clicking `Clear` button, we can clear the text area.
 
 > [!TIP]
->  Start your code with `WAIT` so that board get time to initiate.<br>
->  While using `LOOP` use only one command.
+> Start your code with `WAIT` so that board get time to initiate.  
+> While using `LOOP` use only one command.  
+> If `LOOP` contain multiple commands, put `WAIT` between them so that it add a small delay between them.
 
 # 🧹Clean `Raspberry Pi Pico W` or `Raspberry Pi Pico 2 W`
 1. Connect `Raspberry Pi Pico W` or `Raspberry Pi Pico 2 W` with a USB cable.
