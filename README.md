@@ -71,9 +71,9 @@ A wifi-controlled USB Rubber Ducky clone built with Raspberry Pi Pico W Series b
 7. By clicking `Clear` button, we can clear the text area.
 
 > [!TIP]
-> Start your code with `WAIT` so that board get time to initiate.  
-> While using `LOOP` use only one command.  
-> If `LOOP` contain multiple commands, put `WAIT` between them so that it add a small delay between them.
+> - Start your code with `WAIT` so that board get time to initiate.  
+> - While using `LOOP` use only one command.  
+> - If `LOOP` contain multiple commands, put `WAIT` between them so that it add a small delay between them.
 
 # 🧹Clean `Raspberry Pi Pico W` or `Raspberry Pi Pico 2 W`
 1. Connect `Raspberry Pi Pico W` or `Raspberry Pi Pico 2 W` with a USB cable.
