@@ -83,13 +83,12 @@ A wifi-controlled USB Rubber Ducky clone built with Raspberry Pi Pico W Series b
 3. Copy the `flash_nuke.uf2` file in the `RPI-RP2` or `RP2350`.
    - When it is copied, then it disconnects automatically and reconnect as `RPI-RP2` or `RP2350`.
 
-# 🧩CIRCUITPY Directory Structure
-- **CIRCUITPY/**
-  - **lib/**
-      - `adafruit_hid`
-      - `adafruit_httpserver`
+# 🧩PICOWQUACK Directory Structure
+- **PICOWQUACK/**
   - `code.py`
+  - `boot.py`
   - `index.html`
+  - `network.conf`
 
 # 💡Mnemonic Table
 | Mnemonics | Description | Example  |
